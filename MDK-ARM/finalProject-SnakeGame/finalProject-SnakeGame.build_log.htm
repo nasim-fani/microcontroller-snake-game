@@ -1,0 +1,121 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nasim Fani, Nasim, LIC=03CY8-3936C-VDLKA-1LMG5-HAENI-QZD5C
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.25.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.25.2.0
+Dialog DLL:      DCM.DLL V1.17.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.35.1.0
+ 
+<h2>Project:</h2>
+C:\Users\nasim\Documents\MicroLab\finalProject-SnakeGame\MDK-ARM\finalProject-SnakeGame.uvprojx
+Project File Date:  09/01/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'finalProject-SnakeGame'
+compiling stm32f3xx_it.c...
+../Src/stm32f3xx_it.c(168): warning:  #111-D: statement is unreachable
+  			break;
+../Src/stm32f3xx_it.c(172): warning:  #111-D: statement is unreachable
+  			break;
+../Src/stm32f3xx_it.c(176): warning:  #111-D: statement is unreachable
+  			break;
+../Src/stm32f3xx_it.c(180): warning:  #111-D: statement is unreachable
+  			break;	
+../Src/stm32f3xx_it.c(182): warning:  #940-D: missing return statement at end of non-void function "findRow" 
+  }
+../Src/stm32f3xx_it.c(185): warning:  #177-D: variable "flag1"  was declared but never referenced
+  	int flag1 = 0;
+../Src/stm32f3xx_it.c(214): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10 | GPIO_PIN_11 | GPIO_PIN_12 | GPIO_PIN_13 | GPIO_PIN_14 | GPIO_PIN_15 ,0);
+../Src/stm32f3xx_it.c(216): warning:  #188-D: enumerated type mixed with another type
+  		if(snake[0][1] < appleRow) HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13,1);//below		
+../Src/stm32f3xx_it.c(217): warning:  #188-D: enumerated type mixed with another type
+  		else HAL_GPIO_WritePin(GPIOE, GPIO_PIN_9,1); //above
+../Src/stm32f3xx_it.c(221): warning:  #188-D: enumerated type mixed with another type
+  		if(snake[0][0] > appleColumn) HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15,1);//left		
+../Src/stm32f3xx_it.c(222): warning:  #188-D: enumerated type mixed with another type
+  		else HAL_GPIO_WritePin(GPIOE, GPIO_PIN_11,1); //right
+../Src/stm32f3xx_it.c(226): warning:  #188-D: enumerated type mixed with another type
+  		if(snake[0][1] > appleRow) HAL_GPIO_WritePin(GPIOE, GPIO_PIN_10,1);//right up	
+../Src/stm32f3xx_it.c(227): warning:  #188-D: enumerated type mixed with another type
+  		else HAL_GPIO_WritePin(GPIOE, GPIO_PIN_12,1); //right down
+../Src/stm32f3xx_it.c(231): warning:  #188-D: enumerated type mixed with another type
+  		if(snake[0][1] > appleRow) HAL_GPIO_WritePin(GPIOE, GPIO_PIN_8,1);//left	up	
+../Src/stm32f3xx_it.c(232): warning:  #188-D: enumerated type mixed with another type
+  		else HAL_GPIO_WritePin(GPIOE, GPIO_PIN_14,1); //left down
+../Src/stm32f3xx_it.c(347): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_0,x1);
+../Src/stm32f3xx_it.c(348): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_1,x2);
+../Src/stm32f3xx_it.c(349): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_2,x3);
+../Src/stm32f3xx_it.c(350): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOC,GPIO_PIN_3,x4);
+../Src/stm32f3xx_it.c(777): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9,1);
+../Src/stm32f3xx_it.c(779): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6,0);	
+../Src/stm32f3xx_it.c(783): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_6,1);
+../Src/stm32f3xx_it.c(785): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7,0);	
+../Src/stm32f3xx_it.c(786): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_5,1);//decimal point
+../Src/stm32f3xx_it.c(790): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_7,1);
+../Src/stm32f3xx_it.c(792): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8,0);	
+../Src/stm32f3xx_it.c(793): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_5,0);//decimal point
+../Src/stm32f3xx_it.c(797): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_8,1);
+../Src/stm32f3xx_it.c(799): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_9,0);		
+../Src/stm32f3xx_it.c(908): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  			snakeSpeed += 0.5;
+../Src/stm32f3xx_it.c: 30 warnings, 0 errors
+linking...
+Program Size: Code=17404 RO-data=480 RW-data=216 ZI-data=3184  
+FromELF: creating hex file...
+"finalProject-SnakeGame\finalProject-SnakeGame.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM.CMSIS.5.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_finalProject-SnakeGame
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
